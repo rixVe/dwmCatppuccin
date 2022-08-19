@@ -1,0 +1,22 @@
+diff --git a/dwm.c b/dwm.c
+index 332b0ea..e9ded4c 100644
+--- a/dwm.c
++++ b/dwm.c
+@@ -859,7 +859,7 @@ drawstatusbar(Monitor *m, int bh, char* stext) {
+        text = p;
+ 
+        w += 2; /* 1px padding on both sides */
+-       ret = x = m->ww - w;
++       ret = x = m->ww - w - getsystraywidth();
+ 
+        drw_setscheme(drw, scheme[LENGTH(colors)]);
+        drw->scheme[ColFg] = scheme[SchemeNorm][ColFg];
+@@ -942,7 +942,7 @@ drawbar(Monitor *m)
+ 
+        /* draw status first so it can be overdrawn by tags later */
+        if (m == selmon) { /* status is only drawn on selected monitor */
+-               tw = m->ww - drawstatusbar(m, bh, stext);
++               tw = m->ww - drawstatusbar(m, bh, stext) - stw;
+        }
+ 
+        resizebarwin(m);
