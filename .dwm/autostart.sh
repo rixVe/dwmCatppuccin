@@ -1,6 +1,6 @@
 #!/bin/bash
 
-feh --bg-fill /walls/abstract.jpg &
+feh --bg-fill ~/walls/abstract.jpg &
 picom --experimental-backends &
 slstatus &
 flameshot &
