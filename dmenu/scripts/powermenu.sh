@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function powermenu {
-   options="Cancel\nShutdown\nRestart\nLogout"
+   options="Cancel\nShutdown\nRestart\nExit\nLogout"
    selected=$(echo -e $options | dmenu)
    if [[ $selected = "Shutdown" ]]; then
        poweroff
@@ -9,6 +9,8 @@ function powermenu {
        reboot
    elif [[ $selected = "Logout" ]]; then
        loginctl terminate-session ${XDG_SESSION_ID-}
+   elif [[ $selected = "Exit" ]]; then
+       killall Xorg
    elif [[ $selected = "Cancel" ]]; then
        return
    fi

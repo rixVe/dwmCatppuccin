@@ -12,6 +12,7 @@ export PF_ALIGN=8
 export PF_SEP=""
 
 pfetch
+
 function fish_mode_prompt
 end
 export TERM=xterm-256color
