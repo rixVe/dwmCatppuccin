@@ -1,6 +1,6 @@
 #!/bin/bash
 
-feh --bg-fill ~/walls/abstract.jpg &
+nitrogen --restore & 
 picom --experimental-backends &
 slstatus &
 flameshot &
