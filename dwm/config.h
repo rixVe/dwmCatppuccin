@@ -20,7 +20,7 @@ static const char dmenufont[]       = "Iosevka:size=12";
 static const char col_bgnorm[]       = "#24273a";
 static const char col_bgsel[]        = "#8aadf4";
 
-static const char col_bordnorm[]       = "#24273a";
+static const char col_bordnorm[]       = "#494d64";
 static const char col_bordsel[]        = "#8aadf4";
 
 static const char col_fg[]       = "#cad3f5";
