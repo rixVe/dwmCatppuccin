@@ -11,7 +11,7 @@ fi
 # Shitvidia
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
-xrandr --dpi 96 
+xrandr --dpi 96
 # No screen saver
 xset -dpms
 xset s noblank
@@ -32,7 +32,8 @@ setxkbmap pl
 # Two monitor settings
 my_laptop_external_monitor=$(xrandr --query | grep 'HDMI-0')
 if [[ $my_laptop_external_monitor = *connected* ]]; then
-	xrandr --output HDMI-0 --mode 1920x1080 --refresh 144 --primary --output DP-2 --off 
+	# xrandr --output HDMI-0 --mode 1920x1080 --refresh 144 --primary --dpi 96 --output DP-2 --auto --left-of HDMI-0 
+	xrandr --output HDMI-0 --mode 1920x1080 --refresh 144 --primary --dpi 96 --output DP-2 --off
 fi
 
 # DWM
