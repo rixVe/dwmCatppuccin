@@ -2,7 +2,7 @@
 
 nitrogen --restore & 
 picom --experimental-backends &
-slstatus &
+sh ~/.config/slstatus/launch.sh &
 flameshot &
 nm-applet --indicator & 
 blueberry-tray & 
