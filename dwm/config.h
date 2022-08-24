@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 2;        /* border pixel of windows */
-static const Gap default_gap        = {.isgap = 1, .realgap = 7, .gappx = 7};
+static const Gap default_gap        = {.isgap = 1, .realgap = 1, .gappx = 8};
 
 static const unsigned int snap      = 32;       /* snap pixel */
 
@@ -87,6 +87,10 @@ static Key keys[] = {
 	{ MODKEY|ControlMask,           XK_Delete, spawn,          SHCMD("alacritty -e htop") },
 	{0,                             XK_Print,  spawn,          SHCMD("flameshot gui") },
 
+	{ MODKEY|ShiftMask,             XK_f,      togglefullscr,  {0} },
+
+	{ MODKEY|ShiftMask,             XK_b,      togglebar,      {0} },
+
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
@@ -110,6 +114,16 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Left,   viewprev,       {0} },
 	{ MODKEY|ShiftMask,             XK_Right,  tagtonext,      {0} },
 	{ MODKEY|ShiftMask,             XK_Left,   tagtoprev,      {0} },
+
+	{ MODKEY,                       XK_minus,  setgaps,        {.i = -4 } },
+	{ MODKEY,                       XK_equal,  setgaps,        {.i = +4 } },
+	{ MODKEY|ShiftMask,             XK_minus,  setgaps,        {.i = GAP_RESET } },
+	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = GAP_TOGGLE} },
+
+	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
+	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
