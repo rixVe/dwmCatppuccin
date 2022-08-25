@@ -18,13 +18,13 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Iosevka:size=12" }; 
 static const char dmenufont[]       = "Iosevka:size=12";
 
-static const char col_bgnorm[]       = "#24273a";
-static const char col_bgsel[]        = "#8aadf4";
+static const char col_bgnorm[]         = "#24273a";
+static const char col_bgsel[]          = "#8aadf4";
 
 static const char col_bordnorm[]       = "#494d64";
 static const char col_bordsel[]        = "#8aadf4";
 
-static const char col_fg[]       = "#cad3f5";
+static const char col_fg[]             = "#cad3f5";
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -80,7 +80,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("discord") },
-	{ MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") },
+	/* { MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") }, */
+	{ MODKEY,                       XK_n,      spawn,          SHCMD("alacritty -e ranger") },
 	{ MODKEY,                       XK_a,      spawn,          SHCMD("spotify") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("brave") },
 	{ MODKEY,                       XK_g,      spawn,          SHCMD("gimp") },
@@ -140,7 +141,6 @@ static Key keys[] = {
 	/* TAGKEYS(                        XK_9,                      8) */
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 	{ MODKEY|ShiftMask,             XK_r,      quit,           {1} }, 
-	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("killall slstatus")}, 
 };
 
 /* button definitions */

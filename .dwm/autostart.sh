@@ -1,6 +1,5 @@
 #!/bin/bash
-
-nitrogen --restore & 
+feh --bg-fill ~/wallpapers/colorful/landscapes/lofi-coffe.jpg
 picom --experimental-backends &
 sh ~/.config/slstatus/launch.sh &
 flameshot &

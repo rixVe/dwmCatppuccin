@@ -4,6 +4,8 @@ end
 set fish_greeting
 alias v="nvim"
 
+set -gx EDITOR nvim
+
 export PF_COL1=3
 export PF_COL2=8
 export PF_COL3=7
