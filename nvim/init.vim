@@ -50,6 +50,7 @@ set noshowmode
 
 set background=dark
 set t_CO=256
+set termguicolors
 highlight Normal ctermbg=NONE
 highlight nonText ctermbg=NONE
 
