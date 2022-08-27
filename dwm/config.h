@@ -80,7 +80,6 @@ static Key keys[] = {
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("discord") },
-	/* { MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") }, */
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,                       XK_a,      spawn,          SHCMD("spotify") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("brave") },
@@ -102,8 +101,8 @@ static Key keys[] = {
 
 	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
 
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.025} },
+	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.025} },
 
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 
