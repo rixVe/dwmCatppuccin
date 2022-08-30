@@ -345,19 +345,19 @@ color_schemes:
 colors: *macchiato
 font:
   normal:
-    family: Iosevka
+    family: JetBrains Mono
     style: Regular
 
   bold:
-    family: Iosevka
+    family: JetBrains Mono
     style: Bold
 
   italic:
-    family: Iosevka
+    family: JetBrains Mono
     style: Italic
 
   bold_italic:
-    family: Iosevka
+    family: JetBrains Mono
     style: Bold Italic
 
   size: 11

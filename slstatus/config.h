@@ -69,6 +69,6 @@ static const struct arg args[] = {
 	{ ram_perc, "^c#a5adcb^RAM ^c#cad3f5^%s%%^c#8aadf4^ - "},
 	{ cpu_perc, "^c#a5adcb^CPU ^c#cad3f5^%s%%^c#8aadf4^ - "},
 	{ disk_perc, "^c#a5adcb^MNT ^c#cad3f5^%s%%^c#8aadf4^ - ", "/"},
-  { run_command, "^c#a5adcb^VOL: ^c#cad3f5^%s^c#8aadf4^ - ",   "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
+  { run_command, "^c#a5adcb^VOL ^c#cad3f5^%s^c#8aadf4^ - ",   "amixer sget Master | tail -1 | awk '{print $5 }' | sed 's@\\(\\[\\|\\]\\)@@g'" },
 	{ battery_perc, "^c#a5adcb^BAT ^c#cad3f5^%s%% " , "BAT0"},
 };

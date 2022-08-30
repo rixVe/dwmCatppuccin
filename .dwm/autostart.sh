@@ -1,6 +1,6 @@
 #!/bin/bash
 nitrogen --restore &
-picom --experimental-backends &
+picom &
 sh ~/.config/slstatus/launch.sh &
 flameshot &
 nm-applet --indicator & 
