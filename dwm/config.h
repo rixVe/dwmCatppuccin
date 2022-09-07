@@ -83,6 +83,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("discord --enable-gpu-rasterization") },
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") },
+	{ MODKEY,                       XK_c,      spawn,          SHCMD("caprine") },
 	{ MODKEY,                       XK_a,      spawn,          SHCMD("spotify") },
 	{ MODKEY,                       XK_w,      spawn,          SHCMD("brave") },
 	{ MODKEY,                       XK_g,      spawn,          SHCMD("gimp") },
