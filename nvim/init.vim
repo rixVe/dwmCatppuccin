@@ -2,17 +2,24 @@ call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " " Declare the list of plugins.
 Plug 'scrooloose/nerdtree'
+
 Plug 'vim-syntastic/syntastic'
+
 Plug 'farmergreg/vim-lastplace'
+
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+
 Plug 'ap/vim-css-color'
 Plug 'tpope/vim-commentary' 
+
 Plug 'preservim/tagbar'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bfrg/vim-cpp-modern'
 Plug 'ryanoasis/vim-devicons'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -59,5 +66,8 @@ lua << EOF
 require("catppuccin").setup()
 EOF
 colorscheme catppuccin
+
+tnoremap <Esc> <C-\><C-n>
+nnoremap <C-t> :tabe term://fish<CR>
 
 source $HOME/.config/nvim/plug-config/coc.vim
