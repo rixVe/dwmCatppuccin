@@ -41,10 +41,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       1 << 3,            0,           -1 },
-	{ "discord",  NULL,       NULL,       1 << 2,            0,           -1 },
-	{ "Brave",    NULL,       NULL,       1 << 0,            0,           -1 },
-	{ "Spotify",  NULL,       NULL,       1 << 1,            0,           -1 },
+	/* { "Gimp",     NULL,       NULL,       1 << 3,            0,           -1 }, */
+	/* { "discord",  NULL,       NULL,       1 << 2,            0,           -1 }, */
+	/* { "Brave",    NULL,       NULL,       1 << 0,            0,           -1 }, */
+	/* { "Spotify",  NULL,       NULL,       1 << 1,            0,           -1 }, */
 	{ "obs",      NULL,       NULL,       1 << 4,            0,           -1 },
 };
 
@@ -85,7 +85,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_n,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,                       XK_c,      spawn,          SHCMD("caprine") },
 	{ MODKEY,                       XK_a,      spawn,          SHCMD("spotify") },
-	{ MODKEY,                       XK_w,      spawn,          SHCMD("brave") },
+	{ MODKEY,                       XK_w,      spawn,          SHCMD("firefox") },
 	{ MODKEY,                       XK_g,      spawn,          SHCMD("gimp") },
 	{ MODKEY,                       XK_m,      spawn,          SHCMD("pavucontrol") },
 	{ MODKEY,                       XK_p,      spawn,          SHCMD("sh /home/piotr/.config/dmenu/scripts/powermenu.sh") },
