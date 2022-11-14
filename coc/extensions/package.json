@@ -3,5 +3,7 @@
     "coc-clangd": ">=0.24.0",
     "coc-json": ">=1.6.1",
     "coc-pairs": ">=1.3.2"
-  }
+  },
+  "disabled": [],
+  "locked": []
 }

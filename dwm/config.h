@@ -16,6 +16,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 
 static const char *fonts[]          = { "JetBrains Mono:size=12" }; 
+/* static const char *fonts[]          = { "Switzer:size=12" }; */ 
 static const char dmenufont[]       = "JetBrains Mono:size=12";
 
 static const char col_bgnorm[]         = "#24273a";
@@ -41,8 +42,8 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	/* { "Gimp",     NULL,       NULL,       1 << 3,            0,           -1 }, */
-	/* { "discord",  NULL,       NULL,       1 << 2,            0,           -1 }, */
+	{ "Gimp",     NULL,       NULL,       1 << 3,            0,           -1 },
+	{ "discord",  NULL,       NULL,       1 << 2,            0,           -1 },
 	/* { "Brave",    NULL,       NULL,       1 << 0,            0,           -1 }, */
 	/* { "Spotify",  NULL,       NULL,       1 << 1,            0,           -1 }, */
 	{ "obs",      NULL,       NULL,       1 << 4,            0,           -1 },

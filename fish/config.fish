@@ -3,6 +3,7 @@ if status is-interactive
 end
 set fish_greeting
 alias v="nvim"
+alias extract="sh extract.sh"
 
 export EDITOR="nvim"
 export SHELL="/bin/fish"
